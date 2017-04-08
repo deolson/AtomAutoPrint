@@ -23,7 +23,7 @@ describe('AtomAutoPrint', () => {
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'atom-auto-print:toggle');
+      atom.commands.dispatch(workspaceElement, 'atom-auto-print:fetch');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -37,7 +37,7 @@ describe('AtomAutoPrint', () => {
 
         let atomAutoPrintPanel = atom.workspace.panelForItem(atomAutoPrintElement);
         expect(atomAutoPrintPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'atom-auto-print:toggle');
+        atom.commands.dispatch(workspaceElement, 'atom-auto-print:fetch');
         expect(atomAutoPrintPanel.isVisible()).toBe(false);
       });
     });
@@ -55,7 +55,7 @@ describe('AtomAutoPrint', () => {
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'atom-auto-print:toggle');
+      atom.commands.dispatch(workspaceElement, 'atom-auto-print:fetch');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -65,7 +65,7 @@ describe('AtomAutoPrint', () => {
         // Now we can test for view visibility
         let atomAutoPrintElement = workspaceElement.querySelector('.atom-auto-print');
         expect(atomAutoPrintElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'atom-auto-print:toggle');
+        atom.commands.dispatch(workspaceElement, 'atom-auto-print:fetch');
         expect(atomAutoPrintElement).not.toBeVisible();
       });
     });

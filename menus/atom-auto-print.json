@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle atom-auto-print",
-        "command": "atom-auto-print:toggle"
+        "label": "Fetch code",
+        "command": "atom-auto-print:fetch"
       }
     ]
   },
@@ -15,8 +15,8 @@
           "label": "atom-auto-print",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "atom-auto-print:toggle"
+              "label": "Fetch code",
+              "command": "atom-auto-print:fetch"
             }
           ]
         }

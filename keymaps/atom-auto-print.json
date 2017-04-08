@@ -1,5 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "atom-auto-print:toggle"
+    "ctrl-alt-o": "atom-auto-print:fetch"
   }
 }
