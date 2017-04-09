@@ -15,7 +15,7 @@ describe('AtomAutoPrint', () => {
     activationPromise = atom.packages.activatePackage('atom-auto-print');
   });
 
-  describe('when the atom-auto-print:toggle event is triggered', () => {
+  describe('when the atom-auto-print:fetch event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
